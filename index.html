@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+
+    <link rel="stylesheet" href="./styles/main.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <section id="no-data-section" class="visible">
+          <img src="./assets/images/empty-list.png" />
+          <p>There’s no task here!</p>
+          <button id="open-modal-button">
+            <img src="./assets/icons/plus-icon.svg" /> Create new task
+          </button>
+        </section>
+
+        <section id="list"></section>
+        <img class="add-new-task-icon" src="./assets/icons/add-new-btn.svg" />
+      </div>
+
+      <div class="modal-wrapper">
+        <form action="">
+          <div class="field-item">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+            <div id="title-error"></div>
+          </div>
+
+          <div class="field-item">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" />
+          </div>
+
+          <div class="field-buttons">
+            <button class="secondary" id="cancel-btn">Cancel</button>
+            <button type="button" class="primary" id="add-new-btn">
+              Create
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <script src="./scripts/main.js"></script>
+    </div>
+  </body>
+</html>
