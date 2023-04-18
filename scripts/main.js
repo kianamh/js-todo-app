@@ -58,7 +58,7 @@ submitButton.addEventListener("click", function (event) {
       `<div class="task-item" id="item-${itemsCount}">
             <div class="task-item-title">${titleValue}</div>
             <div class="task-item-right-section">
-                <img id="item-${itemsCount}-remove-btn" class="remove-btn" src="../assets/icons/trash-icon.svg" />
+                <img id="item-${itemsCount}-remove-btn" class="remove-btn" src="assets/icons/trash-icon.svg" />
                <div>${category}</div>
             </div>
         </div>`
